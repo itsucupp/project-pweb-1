@@ -1,0 +1,102 @@
+.jumbotron{
+    padding-top: 10rem;
+    background-color: #e2edff;
+}
+
+
+#projects {
+    background-color: #e2edff;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+/* Animasi untuk gambar */
+@keyframes zoomIn {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .card img {
+    animation: zoomIn 0.8s ease-in-out;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
+  /* Membuat gambar menjadi oval horizontal */
+.card img {
+    border-radius: 15px; /* Melengkungkan sudut gambar */
+    object-fit: cover; /* Menyesuaikan gambar dengan wadah */
+    height: 180px; /* Atur tinggi gambar */
+    width: 100%; /* Atur lebar gambar agar sesuai dengan container */
+    animation: fadeIn 0.5s ease-in-out;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.05); /* Zoom saat di-hover */
+    opacity: 0.95;
+  }
+
+  /* Animasi teks pada navbar */
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: white;
+    transition: width 0.3s ease;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f8d7da; /* Warna saat di-hover */
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+    width: 100%; /* Garis muncul penuh saat di-hover */
+  }
+  .dropdown-menu {
+    background-color: rgb(8, 25, 137); /* Warna latar belakang dropdown */
+    border: none; /* Menghilangkan border */
+  }
+  
+  .dropdown-menu .dropdown-item {
+    color: white; /* Warna teks */
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #f8d7da; /* Warna latar saat di-hover */
+    color: black; /* Warna teks saat di-hover */
+  }
+
+  /* CSS untuk membuat SVG responsif */
+.svg-responsive {
+  width: 100%;  /* Mengatur lebar SVG agar 100% dari lebar kontainer */
+  height: auto; /* Memastikan tinggi SVG disesuaikan secara proporsional dengan lebar */
+}
+
+    
